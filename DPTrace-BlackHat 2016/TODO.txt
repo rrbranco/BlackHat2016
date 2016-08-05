@@ -1,0 +1,10 @@
+This is not a full list of items to do in the project, but gives a good idea of next steps:
+	- Adding more instructions (support more than the basic x86, for example, x87, XMM)
+	- Automating certain steps (for example, the range finding based on CreateFileW, setting the register for the forward tracing - taking into consideration srcdeps for the range and the
+		root of the tree returned by the dptrace_forward)
+	- Porting the tracer to IDA, so it would support other OSs (maybe has no value without adding support for more instructions)
+	- Optimize the tracer (for example, adding optional command line arguments to avoid tracing certain dlls)
+	- Overall code clean-up:
+		- On the integration of the forward analysis, lots of command line options were added without proper argument parsing and validation
+		- Some code duplication exists around
+		- Performance optimization on different parts

@@ -1,0 +1,10 @@
+ LIBRARY "vdt-tracer.dll"
+
+ EXPORTS
+        DebugExtensionInitialize
+        dptrace_help
+        dptrace_trace
+		dptrace_forward_help
+		dptrace_forward
+		dptrace_analyzer
+		dptrace_analyzer_help
